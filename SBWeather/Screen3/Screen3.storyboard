@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Screen3 View Controller-->
+        <scene sceneID="ufg-2M-00l">
+            <objects>
+                <viewController restorationIdentifier="thirdScreen" storyboardIdentifier="thirdScreen" id="0C4-Wl-7Tt" customClass="SBScreen3ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WoK-C2-SX0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ra5-06-Lu8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yay-Dv-MrL" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City latitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f0l-wQ-NVW">
+                                                <rect key="frame" x="82" y="312" width="250" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="MMI-xd-4gP"/>
+                                                    <constraint firstAttribute="width" constant="250" id="veu-xq-i7m"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DjD-hV-JHr">
+                                                <rect key="frame" x="82" y="202" width="250" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="1Jp-mq-Qm0"/>
+                                                    <constraint firstAttribute="height" constant="40" id="EPa-84-183"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="address-level2"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter city info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VW2-mW-4Jr">
+                                                <rect key="frame" x="86" y="84" width="242" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City longitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-1n-DxD">
+                                                <rect key="frame" x="82" y="257" width="250" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="TpZ-ug-fvp"/>
+                                                    <constraint firstAttribute="width" constant="250" id="Yuf-cT-vF9"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="CTf-1n-DxD" firstAttribute="top" secondItem="DjD-hV-JHr" secondAttribute="bottom" constant="15" id="0pG-Rf-zr0"/>
+                                            <constraint firstItem="DjD-hV-JHr" firstAttribute="centerX" secondItem="Yay-Dv-MrL" secondAttribute="centerX" id="2qL-oV-TIb"/>
+                                            <constraint firstItem="f0l-wQ-NVW" firstAttribute="top" secondItem="CTf-1n-DxD" secondAttribute="bottom" constant="15" id="BME-JV-Ubr"/>
+                                            <constraint firstItem="VW2-mW-4Jr" firstAttribute="centerX" secondItem="Yay-Dv-MrL" secondAttribute="centerX" id="K6N-Dl-vud"/>
+                                            <constraint firstItem="f0l-wQ-NVW" firstAttribute="centerX" secondItem="Yay-Dv-MrL" secondAttribute="centerX" id="QzX-Mr-8gd"/>
+                                            <constraint firstItem="CTf-1n-DxD" firstAttribute="centerX" secondItem="Yay-Dv-MrL" secondAttribute="centerX" id="k24-EI-fDH"/>
+                                            <constraint firstItem="DjD-hV-JHr" firstAttribute="top" secondItem="VW2-mW-4Jr" secondAttribute="bottom" constant="67.5" id="kuP-f4-4Xr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Yay-Dv-MrL" secondAttribute="trailing" id="Asy-qN-JEg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yay-Dv-MrL" secondAttribute="bottom" constant="-44" id="HOK-Ag-ZiK"/>
+                                    <constraint firstItem="Yay-Dv-MrL" firstAttribute="leading" secondItem="Ra5-06-Lu8" secondAttribute="leading" id="JFc-AQ-7s1"/>
+                                    <constraint firstItem="Yay-Dv-MrL" firstAttribute="width" secondItem="Ra5-06-Lu8" secondAttribute="width" id="MX9-Wm-o8S"/>
+                                    <constraint firstItem="Yay-Dv-MrL" firstAttribute="top" secondItem="Ra5-06-Lu8" secondAttribute="top" id="Pkz-86-xFd"/>
+                                    <constraint firstItem="Yay-Dv-MrL" firstAttribute="height" secondItem="Ra5-06-Lu8" secondAttribute="height" id="nZW-ZL-U5w"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VW2-mW-4Jr" firstAttribute="top" secondItem="uQa-Ug-Ufe" secondAttribute="top" constant="84" id="7um-5L-E9x"/>
+                            <constraint firstItem="Ra5-06-Lu8" firstAttribute="leading" secondItem="uQa-Ug-Ufe" secondAttribute="leading" id="9kF-aF-tvT"/>
+                            <constraint firstItem="Ra5-06-Lu8" firstAttribute="top" secondItem="uQa-Ug-Ufe" secondAttribute="top" id="E1m-xg-Ki4"/>
+                            <constraint firstItem="Ra5-06-Lu8" firstAttribute="trailing" secondItem="uQa-Ug-Ufe" secondAttribute="trailing" id="aK4-qe-N4u"/>
+                            <constraint firstAttribute="bottom" secondItem="Ra5-06-Lu8" secondAttribute="bottom" id="jJS-za-9eL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uQa-Ug-Ufe"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLatitudeTextField" destination="f0l-wQ-NVW" id="UWq-Hn-jfL"/>
+                        <outlet property="cityLongitudeTextField" destination="CTf-1n-DxD" id="zfN-uE-I2k"/>
+                        <outlet property="cityNameTextField" destination="DjD-hV-JHr" id="5V0-mc-2EE"/>
+                        <outlet property="screenView" destination="WoK-C2-SX0" id="WGA-FI-Zjt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OD-Bl-pdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="142.63392857142856"/>
+        </scene>
+    </scenes>
+</document>
